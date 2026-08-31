@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zestawienie aplikacji – Apteki Sieciowe</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #2c3e50;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .table-container {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 950px;
+        }
+        th, td {
+            border: 1px solid #edf2f7;
+            padding: 10px 14px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .column-headers th {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #334155;
+        }
+
+        .category-header {
+            background-color: #cbd5e1 !important;
+            color: #0f172a !important;
+            text-align: left !important;
+            padding-left: 20px !important;
+            font-size: 1.1em !important;
+            font-weight: 700 !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+            border-top: 3px solid #94a3b8;
+            border-bottom: none;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        tr:hover td {
+            background-color: #f1f5f9;
+        }
+        .store-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-weight: 600;
+        }
+        .store-logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            object-fit: contain;
+            background: #fff;
+            padding: 2px;
+            border: 1px solid #e2e8f0;
+        }
+        .check { color: #16a34a; font-size: 1.25em; }
+        .cross { color: #dc2626; font-size: 1.25em; }
+    </style>
+</head>
+<body>
+
+    <h2>Aplikacje i funkcje – Apteki Sieciowe</h2>
+
+    <div class="table-container">
+        <table>
+            <tbody>
+                <!-- ================= KATEGORIA 1 ================= -->
+                <tr>
+                    <th colspan="7" class="category-header">⚕️ Największe Apteki Sieciowe w Polsce</th>
+                </tr>
+                <tr class="column-headers">
+                    <th>Apteka</th>
+                    <th>Aplikacja</th>
+                    <th>Skanowanie / Realizacja e-Recepty 📱</th>
+                    <th>Rezerwacja leków (Odbiór w aptece) 📦</th>
+                    <th>Przypomnienia o zażyciu leków ⏰</th>
+                    <th>Program punktowy / lojalnościowy 🎁</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-cell">
+                            <span>DOZ (Dbam o Zdrowie)</span>
+                            <img class="store-logo" src="https://www.google.com/s2/favicons?domain=doz.pl&sz=128" alt="DOZ">
+                        </div>
+                    </td>
+                    <td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-cell">
+                            <span>Gemini</span>
+                            <img class="store-logo" src="https://www.google.com/s2/favicons?domain=aptekagemini.pl&sz=128" alt="Gemini">
+                        </div>
+                    </td>
+                    <td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td><td class="cross">❌</td><td class="cross">❌</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-cell">
+                            <span>Super-Pharm</span>
+                            <img class="store-logo" src="https://www.google.com/s2/favicons?domain=superpharm.pl&sz=128" alt="Super-Pharm">
+                        </div>
+                    </td>
+                    <td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td><td class="cross">❌</td><td class="check">✔️</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-cell">
+                            <span>Ziko Apteka</span>
+                            <img class="store-logo" src="https://www.google.com/s2/favicons?domain=ziko.pl&sz=128" alt="Ziko">
+                        </div>
+                    </td>
+                    <td class="check">✔️</td><td class="cross">❌</td><td class="check">✔️</td><td class="cross">❌</td><td class="check">✔️</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="store-cell">
+                            <span>Dr.Max</span>
+                            <img class="store-logo" src="https://www.google.com/s2/favicons?domain=drmax.pl&sz=128" alt="Dr.Max">
+                        </div>
+                    </td>
+                    <td class="check">✔️</td><td class="check">✔️</td><td class="check">✔️</td><td class="cross">❌</td><td class="check">✔️</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
